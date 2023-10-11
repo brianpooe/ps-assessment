@@ -1,0 +1,26 @@
+[
+  {
+    "author": "F. Scott Fitzgerald",
+    "initials": "FS",
+    "title": "The Great Gatsby",
+    "year": 1925
+  },
+  {
+    "author": "Harper Lee",
+    "initials": "HL",
+    "title": "To Kill a Mockingbird",
+    "year": 1960
+  },
+  {
+    "author": "Stephenie Meyer",
+    "initials": "SM",
+    "title": "Twilight",
+    "year": 2005
+  },
+  {
+    "author": "Stephen King",
+    "initials": "S",
+    "title": "If It Bleeds",
+    "year": 2020
+  }
+]

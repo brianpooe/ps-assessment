@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "part1": "nx run part-1-html-css:serve"
+    "part1": "nx run part-1-html-css:serve",
+    "part2": "nx run part-2-javascript:serve"
   },
   "private": true,
   "devDependencies": {
