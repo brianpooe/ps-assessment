@@ -1,5 +1,6 @@
 import "./app.element.scss";
 import { Book } from "./book.interface";
+import { filterBooks } from "./book.util";
 
 export class AppElement extends HTMLElement {
   connectedCallback() {
@@ -58,13 +59,6 @@ export class AppElement extends HTMLElement {
         });
       });
 
-    // Create a function to filter the books array based on the search input value.
-    const filterBooks = (value: string) => {
-      return books.filter((book) => {
-        return book.author.toLowerCase().includes(value) ||
-          book.title.toLowerCase().includes(value);
-      });
-    };
 
     // Add a change event listener to the search input field.
     searchInput.addEventListener("input", (e: any) => {
@@ -72,7 +66,7 @@ export class AppElement extends HTMLElement {
       const value = e.target.value.toLowerCase();
 
       // Filter the books array based on the search input value.
-      const filteredBooks = filterBooks(value);
+      const filteredBooks: Book[] = filterBooks(books, value);
 
       // Update the visibility of the book elements.
       books.forEach((book) => {
@@ -80,6 +74,8 @@ export class AppElement extends HTMLElement {
       });
 
       // Update UI when no books are found
+
+      // Sort books by title or author in ascending or descending order.
 
     });
   }
