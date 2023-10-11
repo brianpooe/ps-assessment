@@ -1,0 +1,7 @@
+<div class="container pt-4 mx-auto sm:px-6 lg:px-8">
+  <payspace-search (searchText)="searchText($event)"></payspace-search>
+  <h2 class="text-sm font-medium text-gray-500 py-6">Books</h2>
+  <ul role="list" class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+    <payspace-book *ngFor="let book of books$ | async" [book]="book" />
+  </ul>
+</div>
