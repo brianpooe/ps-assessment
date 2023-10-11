@@ -2,6 +2,8 @@
 
 Applications was built using nx monorepo -> https://nx.dev/
 
+After cloning project run `npm install --legacy-peer-deps` (the flag is due to prettier version requirement)
+
 ## Running tasks
 
 To run Part 1: HTML/CSS use the following syntax:
