@@ -5,7 +5,8 @@
   "scripts": {
     "part1": "nx run part-1-html-css:serve",
     "part2": "nx run part-2-javascript:serve",
-    "part4": "nx run part-4-problem-solving:serve"
+    "part4": "nx run part-4-problem-solving:serve",
+    "part5": "nx run part-5-code-review:serve"
   },
   "private": true,
   "devDependencies": {
